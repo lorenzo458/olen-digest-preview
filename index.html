@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- digest-postpage-v11 -->
+<!-- digest-postpage-v12 -->
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,12 +14,12 @@
   .sub{color:#5b6675;font-size:13.5px;line-height:1.5;margin:0 2px 16px}
   .sub b{color:#1a2230}
   .card{background:#fff;border-radius:14px;padding:15px;margin-bottom:14px;box-shadow:0 2px 8px rgba(20,35,59,.07)}
-  .step{font-size:12px;font-weight:800;letter-spacing:.5px;color:#c8932a;text-transform:uppercase;margin-bottom:10px}
+  .step{font-size:12px;font-weight:800;letter-spacing:.5px;color:#1B5BA0;text-transform:uppercase;margin-bottom:10px}
   .poster{width:100%;border-radius:10px;display:block;border:1px solid #e3e7ee}
   .hint{font-size:13px;color:#46505f;line-height:1.5;margin:11px 2px 0}
   .hint b{color:#16233b}
   textarea{width:100%;border:1px solid #dfe3ea;border-radius:8px;padding:10px;font:inherit;font-size:13px;
-           min-height:185px;color:#1a2230;background:#fbfcfd;resize:vertical}
+           min-height:330px;color:#1a2230;background:#fbfcfd;resize:vertical}
   button{margin-top:9px;width:100%;background:#16233b;color:#fff;border:0;border-radius:9px;padding:13px 16px;
          font-size:15px;font-weight:700;cursor:pointer}
   ol{margin:4px 0 0;padding-left:22px}
@@ -31,27 +31,36 @@
 <body>
 <div class="wrap">
   <h1>📣 This week's Facebook post — ready</h1>
-  <p class="sub">A Facebook post = <b>1 picture</b> + <b>1 caption</b>. No screenshots — just <b>save</b> the picture and <b>copy</b> the caption.</p>
+  <p class="sub">A Facebook post = <b>1 picture</b> + <b>1 caption</b>. Just <b>save</b> the picture and <b>copy</b> the caption — no screenshots.</p>
 
   <div class="card">
     <div class="step">1 · The picture</div>
-    <img class="poster" src="poster.png?v=9" alt="This week in Arctic Slope">
-    <p class="hint">📱 <b>Long-press the picture → Save to Photos.</b> Each event shows its own flyer (with the org's logo).</p>
+    <img class="poster" src="poster.png?v=12" alt="This week in Arctic Slope">
+    <p class="hint">📱 <b>Long-press the picture → Save to Photos.</b> One clean image — big text, easy to read in the feed.</p>
   </div>
 
   <div class="card">
     <div class="step">2 · The caption</div>
-    <textarea id="cap" readonly>📅 This week across the Arctic Slope — 5 events 👇 (May 25 – 31, 2026)
+    <textarea id="cap" readonly>📅 This week across the Arctic Slope · May 25–31
 
-• Mon · All day — Memorial Day Campus Closure (Iḷisaġvik College)
-• Mon · All day — Memorial Day Closure (City of Utqiaġvik)
-• Wed · 8:30 AM — Summer Youth Program (Utqiaġvik Recreation)
-• Wed · 9:00 AM — Alaska MMIP Justice Summit & Red Dress Gala
-• Sun · 11:00 AM — Sunday Service (Barrow Samoan Assembly of God)
+🔵 MON · Memorial Day — offices & campuses closed
+Iḷisaġvik College · City of Utqiaġvik
 
-📢 Grants & Opportunities: ASCF 2026 Local Grants ($625K · food security & education) + Quality of Life Survey (open thru Jul 31) — arcticslopecommunity.org/grants
+🔵 WED 8:30 AM · Summer Youth Program
+Utqiaġvik Recreation · Youth Center · free, ages 4–11
 
-Powered by OlenArc · Sponsored by City of Utqiaġvik + ASCF</textarea>
+🔵 WED 9:00 AM · Alaska MMIP Justice Summit & Red Dress Gala
+Dena'ina Center, Anchorage · May 27–29
+
+🔵 SUN 11:00 AM · Sunday Service
+Barrow Samoan Assembly of God · Lions Club Hall
+
+📢 Grants & Opportunities
+• ASCF 2026 Local Grants — $625K for food security & education → arcticslopecommunity.org
+• Quality of Life Survey — open through Jul 31; your voice shapes local grant funding
+
+💙 Sponsored by the City of Utqiaġvik + Arctic Slope Community Foundation
+⚡ Powered by OlenArc</textarea>
     <button onclick="navigator.clipboard.writeText(document.getElementById('cap').value).then(()=>{this.textContent='Copied ✓'})">Copy caption</button>
   </div>
 
