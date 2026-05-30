@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- digest-postpage -->
+<!-- digest-postpage-v3 -->
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,102 +19,52 @@
   .hint{font-size:13px;color:#46505f;line-height:1.5;margin:11px 2px 0}
   .hint b{color:#16233b}
   textarea{width:100%;border:1px solid #dfe3ea;border-radius:8px;padding:10px;font:inherit;font-size:13px;
-           min-height:165px;color:#1a2230;background:#fbfcfd;resize:vertical}
+           min-height:185px;color:#1a2230;background:#fbfcfd;resize:vertical}
   button{margin-top:9px;width:100%;background:#16233b;color:#fff;border:0;border-radius:9px;padding:13px 16px;
          font-size:15px;font-weight:700;cursor:pointer}
   ol{margin:4px 0 0;padding-left:22px}
   ol li{font-size:14px;line-height:1.7;color:#2a3340}
   ol li b{color:#16233b}
-  details{background:#fff;border-radius:14px;padding:6px 15px;margin-bottom:14px;box-shadow:0 2px 8px rgba(20,35,59,.07)}
-  summary{font-size:13.5px;font-weight:600;color:#46505f;padding:10px 0;cursor:pointer}
-  .ev{display:flex;gap:12px;padding:10px 0;border-top:1px solid #eef0f4}
-  .when{flex:0 0 58px;text-align:center;border-right:1px solid #eef0f4;padding-right:10px}
-  .when b{display:block;font-size:13px;color:#c8932a}
-  .when span{font-size:12px;color:#5b6675}
-  .what .t{font-weight:700;font-size:14.5px;line-height:1.25}
-  .what .meta{font-size:12.5px;color:#6b7480;margin-top:2px}
   .foot{text-align:center;color:#8a94a3;font-size:11.5px;margin-top:20px;line-height:1.5}
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>📣 This week's Facebook post — ready</h1>
-  <p class="sub">A Facebook post = <b>1 picture</b> + <b>1 caption</b>. Both are below. No screenshots — just <b>save</b> the picture and <b>copy</b> the caption.</p>
+  <p class="sub">A Facebook post = <b>1 picture</b> + <b>1 caption</b>. No screenshots — just <b>save</b> the picture and <b>copy</b> the caption.</p>
 
   <div class="card">
     <div class="step">1 · The picture</div>
-    <img class="poster" src="01-cover.png" alt="This week in Arctic Slope">
-    <p class="hint">📱 <b>Long-press the picture → Save to Photos.</b> This is what people see in the feed.</p>
+    <img class="poster" src="poster.png" alt="This week in Arctic Slope">
+    <p class="hint">📱 <b>Long-press the picture → Save to Photos.</b> Each event shows its own flyer (with the org's logo).</p>
   </div>
 
   <div class="card">
     <div class="step">2 · The caption</div>
     <textarea id="cap" readonly>📅 This week across the Arctic Slope — 5 events 👇 (May 25 – 31, 2026)
 
-• Mon All day — Memorial Day Campus Closure
-• Mon All day — Memorial Day Closure
-• Wed 8:30 AM — Summer Youth Program
-• Wed 9:00 AM — Alaska MMIP Justice Summit &amp; Red Dress Gala
-• Sun 11:00 AM — Sunday Service
+• Mon · All day — Memorial Day Campus Closure (Iḷisaġvik College)
+• Mon · All day — Memorial Day Closure (City of Utqiaġvik)
+• Wed · 8:30 AM — Summer Youth Program (Utqiaġvik Recreation)
+• Wed · 9:00 AM — Alaska MMIP Justice Summit & Red Dress Gala
+• Sun · 11:00 AM — Sunday Service (Barrow Samoan Assembly of God)
+
 New events are added all week — see the full live calendar:
-https://olenhub.com/week</textarea>
+https://olenhub.com/week
+
+Powered by OlenArc · Sponsored by City of Utqiaġvik + ASCF</textarea>
     <button onclick="navigator.clipboard.writeText(document.getElementById('cap').value).then(()=>{this.textContent='Copied ✓'})">Copy caption</button>
   </div>
 
   <div class="card">
     <div class="step">How to post</div>
     <ol>
-      <li><b>Long-press</b> the picture above → <b>Save to Photos</b>.</li>
+      <li><b>Long-press</b> the picture → <b>Save to Photos</b>.</li>
       <li>Tap <b>Copy caption</b>.</li>
       <li>Open the <b>Utqiaġvik Update</b> Facebook group → <b>Create post</b>.</li>
-      <li>Add the saved photo, <b>paste</b> the caption, and post. ✅</li>
+      <li>Add the saved photo, <b>paste</b> the caption, post. ✅</li>
     </ol>
   </div>
-
-  <details>
-    <summary>▸ See this week's 5 events (for reference)</summary>
-    
-      <div class="ev">
-        <div class="when"><b>Mon</b><span>All day</span></div>
-        <div class="what">
-          <div class="t">Memorial Day Campus Closure</div>
-          <div class="meta">Iḷisaġvik College</div>
-          
-        </div>
-      </div>
-      <div class="ev">
-        <div class="when"><b>Mon</b><span>All day</span></div>
-        <div class="what">
-          <div class="t">Memorial Day Closure</div>
-          <div class="meta">City of Utqiaġvik</div>
-          <div class="meta">📍 City of Utqiaġvik, AK 99723</div>
-        </div>
-      </div>
-      <div class="ev">
-        <div class="when"><b>Wed</b><span>8:30 AM</span></div>
-        <div class="what">
-          <div class="t">Summer Youth Program</div>
-          <div class="meta">Utqiaġvik Recreation</div>
-          <div class="meta">📍 Youth Center</div>
-        </div>
-      </div>
-      <div class="ev">
-        <div class="when"><b>Wed</b><span>9:00 AM</span></div>
-        <div class="what">
-          <div class="t">Alaska MMIP Justice Summit &amp; Red Dress Gala</div>
-          <div class="meta">MMIWG2S Alaska Working Group</div>
-          <div class="meta">📍 Dena'ina Civic and Convention Center, Anchorage, AK 99501</div>
-        </div>
-      </div>
-      <div class="ev">
-        <div class="when"><b>Sun</b><span>11:00 AM</span></div>
-        <div class="what">
-          <div class="t">Sunday Service</div>
-          <div class="meta">Barrow Samoan Assembly of God</div>
-          <div class="meta">📍 Lions Club Hall, Barrow, AK 99723</div>
-        </div>
-      </div>
-  </details>
 
   <div class="foot">Auto-generated from olenhub · week of 2026-05-25</div>
 </div>
